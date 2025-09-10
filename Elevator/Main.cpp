@@ -23,19 +23,23 @@ public:
 		power = true;
 		cout << "Elevator is working.\n";
 	}
+
 	void NotWorking()
 	{
 		power = false;
 		cout << "Elevator is not working.\n";
 	}
+
 	bool GetStatus()
 	{
 		return power;
 	}
+
 	int GetFloor()
 	{
 		return FloorNow;
 	}
+
 	void GetElevator(int floor)
 	{
 		if (power == false)
@@ -82,6 +86,7 @@ int main()
 
 	obj1.Working();
 	obj1.GetStatus();
+	obj1.GetElevator(4);
 	obj1.GetElevator(4);
 	obj1.GetElevator(2);
 	obj1.GetElevator(7);
